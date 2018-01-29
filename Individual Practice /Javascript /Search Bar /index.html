@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+  </head>
+  <body>
+
+    <div class="container">
+      <form action="#">
+        <input type="search" id="search" placeholder="What are you looking for ?">
+        <a href="#" id="icon" class="fa fa-search"></a>
+      </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+    <script>
+      $(document).ready(function() {
+        $('#icon').click(function() {
+
+          if($('#search').css("width") == "0px") {
+             $("#search").css("width","350px");
+             $("body").css("background","purple");
+          }else {
+            $("#search").css("width","0");
+            $("body").css("background","white");
+          }
+
+          })
+      })
+    </script>
+  </body>
+</html>

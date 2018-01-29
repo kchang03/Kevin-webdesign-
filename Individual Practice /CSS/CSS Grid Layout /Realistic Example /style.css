@@ -1,0 +1,198 @@
+/* Setting up our grid */
+.container {
+	width: 100%; /*Set the width of the entire website here */
+	margin-right: auto;
+	margin-left: auto; /* Margin-left and right are set to auto to center the container */
+}
+.seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child {
+	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
+}
+
+.eleven {
+	width: 91.5%;
+	float: left;
+	margin-left: 2%;
+}
+
+.ten {
+	width: 83%;
+	float: left;
+	margin-left: 2%;
+}
+
+.nine {
+	width: 74.5%;
+	float: left;
+	margin-left: 2%;
+}
+
+.eight {
+	width: 66%;
+	float: left;
+	margin-left: 2%;
+}
+
+.seven {
+	width: 57.5%;
+	float: left;
+	margin-left: 2%;
+}
+
+.six {
+	width: 49%; /* This div spans six columns (the entire row)*/
+	float: left;
+	margin-left: 2%;
+}
+
+.five {
+	width: 40.5%; /* This div spans five columns */
+	margin-left: 2%;
+	float:left;
+}
+
+.four {
+	width: 32%;
+	float:left;
+	margin-left: 2%;
+}
+
+.three {
+	width: 23.5%;
+	float:left;
+	margin-left: 2%;
+}
+
+.two {
+	width: 15%;
+	float:left;
+	margin-left: 2%;
+
+}
+.one {
+	width: 6.5%;
+	float:left;
+	margin-left: 2%;
+}
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
+}
+
+header{
+	height: 73px;
+	background-color:#d13328;
+}
+
+h1{
+	color:white;
+}
+
+.Showcase{
+	height: 510px;
+	background-color:#FABE58;
+	background-image: url("img/showcase.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.row3 .six, .row3 .three{
+	height:333px;
+	background-color:#F89406;
+}
+
+.row4 .six, .row4 .three{
+	height:333px;
+	background-color:#F2784B;
+}
+
+.row5 .three{
+	height:333px;
+	background-color:#D35400;
+}
+
+.row6 .six, .row6 .three{
+	height:333px;
+	background-color:#F89406;
+}
+
+.last{
+	height: 73px;
+	background-color:#d13328;
+}
+
+footer{
+	height:443px;
+	/* background-color:#FABE58; */
+}
+
+.row3 .six{
+	background: url("img/1.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row3 .middle{
+	background-color:#d13328;
+}
+
+.row3 .right{
+	background: url("img/2.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row4 .three{
+	background-color:#d13328;
+}
+
+.row4 .middle{
+	background: url("img/3.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row4 .right{
+	background: url("img/4.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row5 .three{
+	background-color:#d13328;
+}
+
+.row5 .left{
+	background: url("img/5.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row5 .middle{
+	background: url("img/6.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row5 .right{
+	background: url("img/7.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row6 .left{
+	background: url("img/8.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row6 .middle{
+	background: url("img/9.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row6 .right{
+	background: url("img/10.png") no-repeat center center;
+	background-size: cover;
+}
+
+.row7{
+	background-color:#e5e3d8;
+}
+
+.row3, .row4, .row5, .row6, .row7{
+	padding-top:30px;
+}

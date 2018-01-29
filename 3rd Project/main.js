@@ -16,12 +16,4 @@ document.addEventListener('DOMContentLoaded', function(){
 
     topLayer.style.width= e.clientX + skew + delta + 'px';
   });
-
-
-$('.menu-toggle').click(function() {
-
-  $('.site-nav').toggleClass('site-nav--open', 500);
-  $(this).toggleClass('open');
-
-})
 });

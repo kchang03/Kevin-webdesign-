@@ -1,0 +1,71 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	background: #456fa0;
+	padding: 20px 10px;
+	color:white;
+	text-transform: uppercase;
+}
+
+.boxes{
+	width: 100%;
+	text-align: center;
+	background: #d3e0e3;
+	padding:20px;
+	position:absolute;
+}
+
+.box{
+	font-weight: bold;
+	width: 60%;
+	margin: 0px auto;
+	padding:40px;
+	font-size:2.4em;
+}
+
+.box1 {
+	background:#ffbd00;
+}
+
+.box2 {
+	background:lightgreen;
+	/* Doing the same thing as what Fixed did, but it
+	will never be fixed in that position.
+	-> Position of absolute positions it to the nearest
+	parent not statically positioned
+	-> starting point makes a difference with parent
+	->-> When the parent doesn't have a position(static),
+	top:0,left:0 will position itself in browser*/
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.box3 {
+	background:#dba36a;
+}
+
+.box4{
+	background:#65afff;
+}
+
+.dummyBox{
+	width: 100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	background: gray;
+	height: 1000px;
+	text-align: center;
+	font-size:2.5em;
+	font-weight:bold;
+}

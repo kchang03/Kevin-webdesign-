@@ -1,0 +1,120 @@
+.parent {
+	border:5px solid lightcoral;
+}
+
+.item{
+	height: 50px;
+	margin: 5px;
+	background: deepskyblue;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 600;
+}
+
+/* flex stuff */
+
+.parent{
+	display:flex;
+	/* flow-direction: row-reverse; -> reverse the step */
+/* flex-direction: column; -> horizontally organized */
+/* by default, the maximum width it can have even though it is set verty high.
+flex parent doesn't let its children out. The children are always in one row
+unless "flex-wrap"*/
+	/*flex-wrap:wrap;
+	flex-wrap:wrap-reverse;*/
+	/* justify-content: flex-start; -> (default) it starts in the beginning of the
+	flexbox and then moves out  */
+	/* justify-content: flex-end; -> where, we are not leading with one and work
+	way back(flex-direction:row-reverse), but taking the whole content and sliding
+	over to end, butting on the right */
+	/*justify-content:center -> the whole group moves  */
+	/* justify-content: space-between; -> justifies the content. it takes the first one
+	and puts it all the way to the left and last one, all the way to the right. and
+	makes the space in between all equal-distance. */
+	/* justify-content: space-around; ->  each one has same number of margin and esp!!
+	the first and last has half of it. It is a way to not everything stretched, but
+	a way to center them equally.  */
+/*align-items*/
+
+	/* height: 200px;
+	justify-content: space-around;
+	align-items:center; */
+	/*align-items:start,end,center,baseline,stretch */
+	/* align-content */
+	/* height:200px;
+	flex-wrap:wrap;
+	align-content: center; */
+/* align-content: start,end center,space-around, space-between  */
+
+/* align-content with  flex-direction */
+	/* height:200px;
+	flex- wrap:wrap;
+	align-content: space-between;
+	flex-direction:column; */
+	height:200px;
+}
+
+.item{
+	width:150px;
+}
+	/* flex-grow:0; (default) */
+	/* flex-grow:1; /* -> everything stretched out equally */
+	/*controll the ratio of how much individually will grow; */
+
+
+/* .item:nth-child(2){
+	flex-grow:3;
+}
+
+.item:nth-child(4){
+	flex-grow:8; */
+
+
+/* .item:nth-child(2){
+	flex-shrink: 3;-> enables one of them to shrink
+
+	if the width is large and can't accomodate the equal distribution, then it will
+	enable the shrinking of one element
+} */
+
+/* .item:nth-child(2){
+	flex-basis:39px;
+} */
+/* very similar to setting the width, but it is not. when you put flex-direction:
+column, flex basis standard became the height*/
+
+/* shorthand for flex (grow,shrink,basis)
+.item:nth-child(2){
+	flex:2 3 30px;
+} */
+
+/* align-self */
+
+.item:nth-child(2){
+	align-self:stretch;
+	height: auto;
+}
+
+/* -> doing by itself. We are no longer looking at the group. Just one item in the
+group.pretty useful.
+
+When using stretch, always be aware of what the height was. If given a height,
+esp stretch might not work. So "height: auto;" overrides it. height:auto -> height
+is not declared?  */
+
+/*everything is falling as an order and ones that are not in order are 0
+the order is going from - 0 + so apparently, - is in front of 0 and positive
+two things can have same order, so don't think of it as one single object but
+a group  !!! no group declare is zero!!!! */
+/* .item:nth-child(2){
+	order:2
+}
+
+.item:nth-child(3){
+	order:2
+}
+
+.item:nth-child(5){
+	order:3
+} */
