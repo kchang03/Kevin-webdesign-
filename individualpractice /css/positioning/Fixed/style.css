@@ -1,0 +1,73 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	background: #456fa0;
+	padding: 20px 10px;
+	color:white;
+	text-transform: uppercase;
+}
+
+.boxes{
+	width: 100%;
+	text-align: center;
+	background: #d3e0e3;
+	padding:20px;
+}
+
+.box{
+	font-weight: bold;
+	width: 60%;
+	margin: 0px auto;
+	padding:40px;
+	font-size:2.4em;
+}
+
+.box1 {
+	background:#ffbd00;
+}
+
+.box2 {
+	background:lightgreen;
+	/* When position given Fixed, it takes that element,
+	out of the flow of the document, and controlling
+	-> could overlap on top of other boxes. Doesn't
+	care about other elements.
+	Took Box2's space
+	-> Even when scrolling, it is always going to be fixed
+	Usually used for nav bars. Even when you scroll, the
+	nav bar still sits at the top. They can see it at all
+	times.  */
+
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+.box3 {
+	background:#dba36a;
+}
+
+.box4{
+	background:#65afff;
+}
+
+.dummyBox{
+	width: 100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	background: gray;
+	height: 1000px;
+	text-align: center;
+	font-size:2.5em;
+	font-weight:bold;
+}

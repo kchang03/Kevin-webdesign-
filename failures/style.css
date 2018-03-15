@@ -1,0 +1,52 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+.images{
+  background: url(img/Coverimg1.jpg);
+
+}
+
+.pimg1, .pimg2, .pimg3{
+  height:100%;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.pimg1{
+  background-image: url();
+  min-height:100S%
+}
+
+section{
+  width: 100%;
+  height: 4243px;
+  position: relative;
+  overflow:hidden;
+}
+.zoom{
+  position:relative;
+  background: url(img/idk.jpg), url(img/Final-Image1.jpg);
+  background-position: 0px 700px, Top;
+  background-size: 40%, 100%;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-attachment: scroll;
+}
+
+.zoom1{
+  background: url(img/idk.jpg)
+  background-repeat: no-repeat;
+}
+
+.zoom img{
+
+  position: absolute;
+  left:48%;
+  top:20%;
+  
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+
+$darkblue: #29313a
+$white: #fff
+$lightgreen: #62d474
+
+*
+  margin: 0
+  padding: 0
+  user-select: none
+  /*prevents users from selecting and copying the text */
+
+body
+  font-family: 'Roboto', sans-serif
+  background: $darkblue
+  color: $white
+
+/*Easiest way for making any html element in the center */
+
+.wrapper
+  position: absolute
+  top: 50%
+  left: 50%
+  /*but we can see that the element is not exactly placed in the center*/
+  transform: translate(-50%,-50%)
+
+.btn
+  width: 440px
+  // border: 1px solid $white
+  text-align: center
+  margin-bottom: 10px
+
+.btn .fa
+  color: $lightgreen
+  font-size: 30px
+  cursor: pointer
+
+.form
+  width: 440px
+  // border: 1px solid $white
+  height: 100px
+  box-sizing: border-box
+  padding: 0 20px
+  position: relative
+  /*place it relative, so that we can place child element accordingly */
+
+.input
+  width: 400px
+  border: 0
+  background: transparent
+  /*setting background to transparent so we can customize input better*/
+  outline: none
+  /* even when you click and highlight on it, it doesn't show the border*/
+  box-sizing: border-box
+  padding: 0 20px 10px
+  border-bottom: 3px solid $lightgreen
+  color: $white
+  font-size: 20px
+  transition: all 0.5s ease
+  /*by using the scale tool of transform property, set the scale method value to zero, use transform origin property which determines the origin of the input field*/
+  transform: scale(0)
+  transform-origin: center
+/* we can place the label wherever we want*/
+#search
+  color: $white
+  position: relative
+  top: 18px
+  left: 90px
+  letter-spacing: 1px
+  transition: all 0.5s ease
+  /*First, set the opacity value to 0*/
+  opacity: 0
+
+/*whenever we click the search icon, toggle active class should be added to the input & label field. By targeting the input and toggle active class, set the scale active to 1 */
+
+.input.active
+  transform: scale(1)
+
+#search.active
+  opacity: 1
+
+#search.move
+  top: 60px
+  left: 20px
+  font-size: 12px

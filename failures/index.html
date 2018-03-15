@@ -1,0 +1,79 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>type="text/javascript">
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      $('.zoom img').css({
+        width: (20 + scroll/46) + "%"
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div id="slider">
+
+
+<section class="zoom">
+        <img src="img/GIF-compilation.gif">
+</section>
+
+      <div class="slide slide2">
+        <div class="slide-content">
+          <span>Image Two </span>
+        </div>
+      </div>
+
+      <div class="slide slide3">
+        <div class="slide-content">
+          <span>Image Three </span>
+        </div>
+      </div>
+
+      <div class="slide slide3">
+        <div class="slide-content">
+          <span>Image Three </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script   src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <script>type="text/javascript">
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      $('.zoom img').css({
+        width: (20 + scroll/46) + "%"
+      })
+    })
+  </script>
+</head>
+<body>
+  <section class="zoom zoom1 zoom2">
+    <img src="img/GIF-compilation.gif">
+    <object>
+      <embed src="img/Four.svg">
+    </object>
+
+  </section>
+
+</body>
+</html> -->

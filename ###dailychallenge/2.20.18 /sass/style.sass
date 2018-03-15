@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,900')
+
+$blackgray: #353535
+$orange: #fa782e
+$white: #fff
+$neongreen: #11e95b
+$grey: #acacab
+$black: #000
+$red-orange: #f35e3d
+
+*
+  margin: 0
+  padding: 0
+  outline: none
+
+body
+  font-family: Roboto, sans-serif
+  background: $blackgray
+
+.container
+  width: 280px
+  height: 500px
+  margin: 60px auto
+
+.card-head
+  position: relative
+  height: 252px
+  background: $orange
+  background: linear-gradient(135deg, #fa782e 8%, #c82930 83%);
+  border-radius: 25px 25px 0 0
+
+.card-logo
+  width: 55px
+  margin: 20px
+
+.product-img
+  position: absolute
+  left: 0
+  margin: -16px 0 0 50px
+
+.product-detail
+  padding: 0 20px
+  font-size: 11px
+  color: $white
+
+.product-detail h2
+  font-size: 18px
+  font-weight: 500
+  letter-spacing: 2px
+  padding-bottom: 10px
+  text-transform: uppercase
+
+.back-text
+  display: inline-block
+  font-size: 125px
+  font-weight: 900
+  margin-left: -7px
+  margin-top: -12px
+  opacity: .1
+
+.card-body
+  height: 255px
+  background: $white
+  border-radius: 0 0 25px 25px
+
+.product-title
+  padding: 20px 20px 5px 20px
+  display: block
+  font-size: 17px
+  font-weight: 500
+  letter-spacing: 1px
+  text-transform: uppercase
+
+.product-title b
+  font-weight: 900
+  letter-spacing: 0px
+
+.badge
+  position: relative
+  font-size: 10px
+  font-weight: 300
+  color: $white
+  background: $neongreen
+  padding: 2px 5px
+  border-radius: 4px
+  top: -2px
+  margin-left: 5px
+
+.product-caption
+  display: block
+  padding: 0 20px
+  font-size: 10px
+  font-weight: 400
+  text-transform: uppercase
+
+.product-rating
+  font-style: 11px
+  padding: 0 20px
+
+.product-rating i.grey
+  color: $grey
+
+.product-size h4
+  font-style: 11px
+  padding: 0 21px
+  margin: 15px 0 10px 0
+  text-transform: uppercase
+
+.ul-size
+  margin-left: 15px
+
+.ul-size li
+  list-style: none
+  float: left
+  margin-right: 20px
+
+.ul-size li a
+  display: inline-block
+  text-decoration: none
+  font-size: 11px
+  width: 22px
+  height: 22px
+  border-radius: 100%
+  text-align: center
+  line-height: 23px
+  color: $black
+
+.ul-size li a.active
+  background: $red-orange
+  color: $white
+
+.product-size:before, .product-size::after
+  content: ""
+  display: block
+  clear: both
+
+.product-color h4
+  font-size: 11px
+  padding: 0 21px
+  margin: 40px 0 20px 0
+  text-transform: uppercase
+
+.ul-color li
+  list-style: none
+  float: left
+  margin-right: 20px
+
+.ul-color li a
+  display: inline-block
+  width: 16px
+  height: 16px
+  border-radius: 100%
+
+.ul-color li a.orange
+  background: $red-orange
+
+
+.ul-color li a.green
+  background: $neongreen
+
+.ul-color li a.active::after
+  position: absolute
+  content: ""
+  display: inline-block
+  border: 1px solid $red-orange

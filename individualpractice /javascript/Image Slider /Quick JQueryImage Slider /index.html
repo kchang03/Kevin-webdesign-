@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JQuery Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <div class="container">
+        <h1>JQSlider</h1>
+        <div class="slider-outer">
+          <img src="img/arrow-left.png" class="prev" alt="Prev">
+            <div class="slider-inner">
+                <img src="img/image1.jpg" class="active">
+                <!--How the slider is going to work is that,each time we change
+              it, when we click the arrow button, the active class is going to
+            move to the next image and also change the z-index-->
+                <img src="img/image2.jpg">
+                <img src="img/image3.jpg">
+                <img src="img/image4.jpg">
+            </div>
+          <img src="img/arrow-right.png" class="next" alt="Next">
+
+        </div>
+      </div>
+      <script src="app.js"charset="utf-8"></script>
+  </body>
+</html>

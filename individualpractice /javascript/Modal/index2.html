@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style2.css">
+  <title>Simple Modal</title>
+</head>
+<body>
+
+<button id="modalBtn" class="button">Click Here</button>
+
+<!--mark up for the actual motal  -->
+
+<!--What we have to do when we are building a modal is that, we need to hide it
+when the page loads so we can't see it, then we have a function that is going to
+display it -->
+<div id="simpleModal" class="modal">
+  <div class="modal-content">
+      <div class="modal-header">
+            <span class="closeBtn">&times;</span> <!-- can get closed symbol w/ &times,
+            also put it right side the header  -->
+            <h2>Modal Header</h2>
+      </div>
+      <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis voluptates, optio veniam quas provident, eligendi reiciendis ipsum nemo, maiores officia non magnam eos obcaecati, iste eveniet quibusdam harum reprehenderit architecto.</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+      </div>
+
+</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

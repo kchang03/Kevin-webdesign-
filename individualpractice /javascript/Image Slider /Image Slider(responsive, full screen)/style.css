@@ -1,0 +1,64 @@
+body, #slider, .wrap, .slide-content{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh; /* Think of it as a height of a browser, no matter how it is resized,
+                  as 100 slices across. So, we want this to take up entire thing all 100
+                  slices*/
+  overflow-x:hidden; /* We don't want any horizontal scrollbars*/
+}
+
+.wrap{position:relative;
+}
+
+.slide{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1{background-image: url(img/cat1.png);}
+.slide2{background-image: url(img/cat2.png);}
+.slide3{background-image: url(img/cat3.png);}
+/*Up to now, it will be stacked on top of another untill we get to Javascript
+and we start hiding images and showing one at a time*/
+
+.slide-content{
+  display:flex;
+  flex-direction:column; /* go vertical*/
+  justify-content: center; /*align everything to the center*/
+  align-items:center;
+  text-align: center;
+}
+
+.slide-content span{
+  font-size:5rem;
+  color: #fff;
+}
+
+.arrow{
+  cursor:pointer;
+  position:absolute;
+  top:50%; /* Pay attention to where the origin will go, but, it will be too low so
+  we will add the margin*/
+  margin:-35px;
+  width: 0; /* bas. we are just working w/ the border*/
+  height:0; /* bas. we are just working w/ the border*/
+  border-style: solid;
+  /* working with the border means that you can actually create triangle, arrow on css*/
+}
+
+#arrow-left{
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left:0;
+  margin-left:30px
+}
+
+#arrow-right{
+  border-width: 30px 0px 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right:0;
+  margin-right:30px
+}

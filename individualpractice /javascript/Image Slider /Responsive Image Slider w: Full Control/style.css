@@ -1,0 +1,118 @@
+*{
+  padding:0;
+  margin: 0;
+}
+
+body{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
+img{
+  max-width: 100%; /*constrain it to the width*/
+}
+
+.cycle-slideshow{
+  width: 100%;
+  max-width: 960px;
+  position:relative;
+  margin: 20px auto;
+  overflow-hidden;
+}
+
+.slide{
+  width: 100%;
+  position: relative;
+}
+
+.caption {
+  width: 100%;
+  position: absolute;
+  top:8px;
+  z-index: 9999px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.caption h3{
+  text-transform:uppercase;
+  color: #fff;
+  font-size:.9em;
+  letter-spacing:.1em;
+  padding-bottom: 10px;
+}
+
+.caption p{
+  color: #fff;
+  font-size: .9em;
+  letter-spacing: .1em;
+  padding-bottom: 18px;
+}
+
+.caption span a {
+  text-decoration: none;
+  color: #fff;
+  font-size: .8em;
+  border: 1px solid #fff;
+  padding: 2px 8px;
+}
+
+.caption span a:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* Control Styles */
+
+.cycle-next{
+  width:0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top:20px;
+  right:20px;
+  border-left: 25px solid #fff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index:99999;
+  cursor: pointer;
+}
+
+.cycle-prev{
+  width:0;
+  height: 0;
+  display: block;
+  position: absolute;
+  top:180px;
+  right:20px;
+  border-right: 25px solid #fff;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index:99999;
+  cursor: pointer;
+}
+
+.cycle-pager {
+  text-indent: -9999999;
+  white-space: nowrap;
+  width: 30px;
+  text-align: center;
+  position: absolute;
+  display:block;
+  top:40px;
+  right:17px;
+  z-index:99999;
+  color:#fff;
+  margin:10px 0;
+}
+
+.cycle-pager span{
+  width: 31px;
+  height:  1px;
+  display: block;
+  background:rgba(255,255,255,0.5);
+  transform: rotate(-39deg);
+  -webit-transform: rotate(-39deg);
+  margin: 10px 0;
+}
+
+.cycle-pager .cycle-pager-active {
+  background: #fff;
+}

@@ -1,0 +1,62 @@
+body{
+  font-family: "Arial", sans-serif;
+  font-size:14px;
+  color: #fff;
+  background: #333;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+h1{
+  text-align: center;
+}
+
+.container{
+  width: 540px;
+  margin: 40px auto;
+  overflow: auto;
+}
+
+.slider-inner{
+/* if using bigger images, make sure to change width & height */
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow:hidden;
+  float: left;
+  padding: 3px;
+  border: #666 solid 1px;
+}
+
+.slider-inner img{
+  display:none;
+  /*we want them hidden at first*/
+  width: 500px;
+  height: 300px;
+}
+
+.slider-inner img.active{
+  display: inline-block;
+  /*initially hiding everything and then just show the active edge*/
+}
+
+.prev, .next{
+  float: left;
+  margin-top: 130px;
+  cursor:pointer; /*mouse changes to a pointer when hovers over them*/
+}
+
+.prev{
+  position: relative;
+  margin-right: -45px; /*it is going to be overlapped with other element*/
+  z-index: 100; /*it should always be on top*/
+}
+
+.next{
+  position: relative;
+  margin-left: -45px; /*it is going to be overlapped with other element*/
+  z-index: 100; /*it should always be on top*/
+}
